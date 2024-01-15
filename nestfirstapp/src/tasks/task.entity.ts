@@ -12,4 +12,4 @@ export class Task{
    status: TaskStatus
 }
 
-const tasks = new Task();
+
