@@ -28,7 +28,7 @@ export class TasksController {
    }
 
   @Patch(":id")
-  updateTask(@Param("id") id:string, @Body() updatedFields: UpdateTaskDto){
+  updateTask(@Param("id") id:string, @Body() updatedFields: UpdateTaskDto){  // es de tipo Updatetask Dto y el return de tipo TasK
    return  this.tasksService.updateTask(id,updatedFields)
   }
 

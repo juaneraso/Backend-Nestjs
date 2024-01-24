@@ -43,7 +43,7 @@ export class TasksService {
 
   }
 
-  updateTask(id : string , updateFields: UpdateTaskDto) : Task{
+  updateTask(id : string , updateFields: UpdateTaskDto) : Task{    // Tipo de retornor Task
     const task = this.getTaskById(id);
     const newTask = Object.assign(task,updateFields);
      this.tasks  = this.tasks.map((task)=>(task.id === id ? newTask : task));
